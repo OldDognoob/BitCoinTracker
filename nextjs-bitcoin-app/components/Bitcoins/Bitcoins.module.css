@@ -1,8 +1,8 @@
-.bitcoins_container{
+.bitcoin_container{
     display: flex;
     justify-content: center;
 }
-.bitcoins_row{
+.bitcoin_row{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -12,42 +12,42 @@
     width: 1000px;
     padding: 0rem 2rem;
 }
-.bitcoins_row:hover{
+.bitcoin_row:hover{
     background: #171718;
 }
-.bitcoins{
+.bitcoin{
     display: flex;
     align-items: center;
     padding-right: 24px;
 }
-.bitcoins_img{
+.bitcoin_img{
     height: 30px;
     width: 30px;
     margin-right: 10px;
 }
-.bitcoins_h1{
+.bitcoin_h1{
     font-size: 16px;
     width: 150px;
 }
-.bitcoins_symbol{
+.bitcoin_symbol{
     text-transform: uppercase;
 }
-.bitcoins_data{
+.bitcoin_data{
     display: flex;
     text-align: right;
     justify-content: space-between;
     width: 100%;
 }
-.bitcoins_price{
+.bitcoin_price{
     width: 110px;
 }
-.bitcoins_volume{
+.bitcoin_volume{
     width:155px;
 }
-.bitcoins_marketcap{
+.bitcoin_marketcap{
     width:230px;
 }
-.bitcoins_percent{
+.bitcoin_percent{
     width:100px;
 }
 .red{
