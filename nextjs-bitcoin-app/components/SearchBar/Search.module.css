@@ -5,13 +5,14 @@
     width:300px;
 }
 .bitcoin_input{
-    background:#214D76;
-    color:e2e2e2;
+    background:#173552;
     border:none;
     padding:16px;
     border-radius:4px;
     outline: none;
     height: 100%;
     width: 100%;
-
+}
+.bitcoin_input::placeholder{
+    color:#e2e2e2;
 }
