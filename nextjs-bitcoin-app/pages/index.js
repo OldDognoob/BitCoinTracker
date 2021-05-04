@@ -1,19 +1,25 @@
-import Head from "next/head";
+import {useState} from 'react';
 import SearchBar from "../components/SearchBar";
 import BitcoinsList from "../components/BitcoinsList";
 import Layout from "../components/Layout";
 
 export default function Home({filteredBitcoins}) {
+  const [search, setSearch] = useState('')
+
+  const allBitcoins = filteredBitcoins.filter(bitcoin =>
+    bitcoin.name.toLowerCase().includes(search.toLowerCase()))
   //console.log(filteredBitcoins)
+  const handleChange = e => {
+    e.preventDefault()
+
+    setSearch(e.target.value.toLowerCase())
+  }
   return (
     <Layout>
-      <Head>
-        <title>Title</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <SearchBar type="text" placeholder="Search" />
-      <BitcoinsList filteredBitcoins={filteredBitcoins}/>
+      <div className="bitcoin_app">
+      <SearchBar type="text" placeholder="Search" onChange={handleChange} />
+      <BitcoinsList filteredBitcoins={allBitcoins}/>
+      </div>
     </Layout>
   );
 }

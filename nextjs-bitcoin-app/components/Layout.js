@@ -12,21 +12,21 @@ const Layout = ({ children, title = "BitCoin Tracker" }) => {
       <Link href='/' passHref>
           <a>
             <svg
-              width='675'
+              width='475'
               height='375'
               viewBox='0 0 675 375'
               fill='none'
               xmlns='http://www.w3.org/2000/svg'
-              className='coin_logo'
+              className='bitcoin_logo'
             >
               <path
                 d='M217 125.5L446.5 5L666.5 125.5L446.5 250L217 125.5Z'
-                stroke='#11FFFF'
+                stroke='#903430'
                 strokeWidth='8'
               />
               <path
                 d='M9 125.5L238.5 5L458.5 125.5L238.5 250L9 125.5Z'
-                stroke='#11FFFF'
+                stroke='#903430'
                 strokeWidth='8'
               />
               <line
@@ -34,7 +34,7 @@ const Layout = ({ children, title = "BitCoin Tracker" }) => {
                 y1='125'
                 x2='660'
                 y2='125'
-                stroke='#11FFFF'
+                stroke='#903430'
                 strokeWidth='6'
               />
               <path
@@ -58,8 +58,8 @@ const Layout = ({ children, title = "BitCoin Tracker" }) => {
                   y2='250'
                   gradientUnits='userSpaceOnUse'
                 >
-                  <stop stopColor='#06F0FF' />
-                  <stop offset='1' stopColor='#00FFFF' />
+                  <stop stopColor='#63140B' />
+                  <stop offset='1' stopColor='#63140B' />
                 </linearGradient>
               </defs>
             </svg>
