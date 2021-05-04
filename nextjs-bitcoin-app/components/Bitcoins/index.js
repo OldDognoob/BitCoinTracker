@@ -1,3 +1,5 @@
+import styles from "./Bitcoins.module.css";
+
 const Bitcoins = ({
   name,
   price,
@@ -9,26 +11,26 @@ const Bitcoins = ({
   id,
 }) => {
   return (
-    <div className="bitcoin_container">
-      <div className="bitcoin_row">
-        <div className="bitcoin">
-          <img src={image} alt={name} className="bitcoin_img" />
-          <h1 className="bitcoin_h1">{name}</h1>
-          <p className="bitcoin_symbol">{symbol}</p>
+    <div className={styles.bitcoin_container}>
+      <div className={styles.bitcoin_row}>
+        <div className={styles.bitcoin}>
+          <img src={image} alt={name} className={styles.bitcoin_img}/>
+          <h1 className={styles.bitcoin_h1}>{name}</h1>
+          <p className={styles.bitcoin_symbol}>{symbol}</p>
         </div>
-        <div className="bitcoin_data">
-            <p className="bitcoin_price">${price}</p>
-            <p className="bitcoin_volume">${volume.toLocaleString()}</p>
+        <div className={styles.bitcoin_data}>
+            <p className={styles.bitcoin_price}>${price}</p>
+            <p className={styles.bitcoin_volume}>${volume.toLocaleString()}</p>
             {priceChange < 0 ? (
-                <p className="bitcoin_percent red">
+                <p className={(styles.bitcoin_percent, styles.red)}>
                     {priceChange.toFixed(2)}%
                 </p>
             ):(
-                <p className="bitcoin_percent green">
+                <p className={(styles.bitcoin_percent, styles.green)}>
                     {priceChange.toFixed(2)}%
                 </p>
             )}
-            <p className="bitcoin_market">
+            <p className={styles.bitcoin_marketcap}>
                 Mkt Cap: ${marketcap.toLocaleString()} 
             </p>
         </div>
