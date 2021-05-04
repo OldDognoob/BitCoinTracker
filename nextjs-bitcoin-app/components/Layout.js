@@ -1,3 +1,6 @@
+import Head from 'next/head';
+import Link from 'next/link';
+
 const Layout = ({ children, title = "BitCoin Tracker" }) => {
   return (
     <div className="layout">
@@ -67,3 +70,5 @@ const Layout = ({ children, title = "BitCoin Tracker" }) => {
     </div>
   );
 };
+
+export default Layout;

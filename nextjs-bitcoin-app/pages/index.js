@@ -1,11 +1,12 @@
 import Head from "next/head";
 import SearchBar from "../components/SearchBar";
 import BitcoinsList from "../components/BitcoinsList";
+import Layout from "../components/Layout";
 
 export default function Home({filteredBitcoins}) {
   //console.log(filteredBitcoins)
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Title</title>
         <link rel="icon" href="/favicon.ico" />
@@ -13,7 +14,7 @@ export default function Home({filteredBitcoins}) {
 
       <SearchBar type="text" placeholder="Search" />
       <BitcoinsList filteredBitcoins={filteredBitcoins}/>
-    </div>
+    </Layout>
   );
 }
 
