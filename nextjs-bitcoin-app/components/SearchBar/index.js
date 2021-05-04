@@ -1,8 +1,8 @@
-
-const SearchBar = () => {
+import styles from './Search.module.css';
+const SearchBar = ({...rest}) => {
     return (
-        <div>
-            <h1>Search</h1>
+        <div className={styles.bitcoin_search}>
+            <input className={styles.bitcoin_input} {...rest}/>
         </div>
     )
 }
